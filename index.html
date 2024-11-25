@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tarjeta Romántica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página 1 -->
+    <div class="page" id="page1">
+        <h1>Hola, mi vida</h1>
+        <p>Te hice esta pagina con mucho cariño para recordar los momentos que estuve contigo a tu lado ha sido unico y especial.</p>
+        <button class="nextButton" data-target="#page2">Da click aquí, bb</button>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="page hidden" id="page2">
+        <h1>Nuestras imágenes</h1>
+        <div class="images">
+            <img src="images/imagen1.jpg" alt="Imagen 1">
+            <img src="images/imagen2.jpg" alt="Imagen 2">
+            <img src="images/imagen3.jpg" alt="Imagen 3">
+        </div>
+        <div class="buttons">
+            <button class="prevButton" data-target="#page1">Anterior</button>
+            <button class="nextButton" data-target="#page3">Haz click aquí, amor</button>
+        </div>
+    </div>
+
+    <!-- Página 3 -->
+    <div class="page hidden" id="page3">
+        <h1 class="poema">Un poema para ti</h1>
+        <div class="libro">
+            <div>
+                En tus ojos veo el universo,  
+                En tu sonrisa, mi paraíso eterno.  
+                Eres mi faro, mi sol, mi todo.
+            </div>
+            <div>
+                <Q>Quiero que sepas que, aunque haya pasado tiempo sin escribirte, no hay un solo dia en el que no piense en ti.
+                    Con todo mi amor, Andres❤️
+                </Q>  
+            </div>
+        </div>
+        <button class="prevButton" data-target="#page2">Volver</button>
+    </div>
+
+    <!-- Contenedor para las letras animadas -->
+    <div id="lyrics">
+        <p>🎵🎵</p>
+    </div>
+
+    <!-- Música -->
+    <audio autoplay loop>
+        <source src="audio/I_Feel_It_Coming.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
